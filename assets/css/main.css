@@ -1,0 +1,26 @@
+.header {
+    background-color: var(--primary-color);
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+
+}
+
+.nav-list__item {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.nav-list__item a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
