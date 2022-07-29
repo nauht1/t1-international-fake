@@ -18,8 +18,11 @@
         <header class="header">
             <nav class="header__nav">
                 <ul class="nav-list">
+                    <a href="\" class="header__logo">
+                    <img src="https://assets.website-files.com/61d746db24b5f01252d73a25/61d75a9667bec6d5af6cddde_T1%20Logo%20Red.svg" alt="T1 logo">
+                    </a>
                     <li class="nav-list__item">
-                        <a href="#home">HOME</a>
+                        <a href="#">HOME</a>
                     </li>
                     <li class="nav-list__item">
                         <a href="#team">TEAM</a>
@@ -36,21 +39,61 @@
                 </ul>
 
                 <ul class="nav-list">
-                    <li class="nav-list__item">
-                        Language
+                    <button class="language-button">
+                        <i class="nav-list__item-icon fa-solid fa-earth-americas"></i>
+                        English
+                        <i class="nav-list__item-icon fa-solid fa-angle-down"></i>
+                    </button>
+                    <li class="nav-list__item nav-list__item--separate">
+                        <a href="#login">Log in</a>
                     </li>
                     <li class="nav-list__item">
-                        <a href="#login" class="">LOG IN</a>
-                    </li>
-                    <li class="nav-list__item">
-                        <a href="#signup" class="">SIGN UP</a>
+                        <a href="#signup">Sign up</a>
                     </li>
                 </ul>
             </nav>
         </header>
 
-        <div class="slider">
-            
+        <div class="slider-wrap">
+            <div class="slider">
+                <div class="slides">
+                    <!-- Radio buttons -->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+    
+                    <!-- Slide images -->
+                    <div class="slide slide__transform">
+                        <img src="./assets/img/schedule.jpg" alt="schedule">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/CL-schedule.jpg" alt="CL schedule">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/rolster.webp" alt="rolster 2022">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/bts.png" alt="behind the scenes">
+                    </div>
+    
+                    <!-- automatic slider navigation -->
+                    <div class="slider-nav__auto">
+                        <div class="nav__auto auto__btn1"></div>
+                        <div class="nav__auto auto__btn2"></div>
+                        <div class="nav__auto auto__btn3"></div>
+                        <div class="nav__auto auto__btn4"></div>
+                    </div>
+    
+                    <!-- Manual slider navigation -->
+                    <div class="slider-nav__manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
@@ -62,6 +105,17 @@
         <footer class="footer">
 
         </footer>
+
+        <script>   
+            var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if (counter > 4) {
+                    counter = 1;
+                }
+            },5000);
+        </script>
     </div>
 </body>
 </html>

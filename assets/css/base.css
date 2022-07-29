@@ -1,6 +1,10 @@
 :root {
     --text-color: #333;
+    --header-text-color: #e7eef6;
     --primary-color: #e3002d;
+    --sub-primary-color: #000000;
+    --header-height: 50px;
+    --slider-btn-color: rgb(82, 44, 165);
 }
 
 * {
