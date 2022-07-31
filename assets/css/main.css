@@ -306,7 +306,7 @@
 
 .achievement-content {
     position: relative;
-    background: url('/assets/img/achievement-bg.jpg') no-repeat #fff;
+    background: url('../img/achievement-bg.jpg') no-repeat #fff;
     background-size: cover;
     height: 1000px;
     display: flex;
@@ -357,7 +357,7 @@
 
 .legends-content {
     position: relative;
-    background: url('/assets/img/legends-bg.jpg') no-repeat;
+    background: url('../img/legends-bg.jpg') no-repeat;
     background-size: cover;
     height: 500px;
 }
