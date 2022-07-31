@@ -18,6 +18,7 @@ html {
     line-height: 1.6rem;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .red-underline::after {
@@ -30,7 +31,12 @@ html {
     left: -1%;
 }
 
-.space-two-div {
+.space-two-div-55px {
+    height: 55px;
+    background-color: #000000;
+}
+
+.space-two-div-80px {
     height: 80px;
     background-color: #000000;
 }
