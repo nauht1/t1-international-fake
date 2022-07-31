@@ -5,6 +5,7 @@
     --sub-primary-color: #000000;
     --header-height: 50px;
     --slider-btn-color: rgb(82, 44, 165);
+    --member-width: 230px;
 }
 
 * {
@@ -17,4 +18,19 @@ html {
     line-height: 1.6rem;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+}
+
+.red-underline::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: var(--primary-color);
+    bottom: -50%;
+    left: -1%;
+}
+
+.space-two-div {
+    height: 80px;
+    background-color: #000000;
 }
